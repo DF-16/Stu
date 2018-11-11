@@ -1,0 +1,123 @@
+html,body {
+    width: 100%;
+    height: 100%;
+}
+.ct_layout {
+    width: 100%;
+    height: 100%;
+}
+/*顶部搜索块样式*/
+.ct_header {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    border-bottom: 1px solid #ccc;
+    background-color: #eee;
+}
+.ct_back,.ct_menu {
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    top: 0;
+    background: url(../images/sprites.png);
+    background-size: 200px 200px;
+    padding: 14px;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+.ct_back {
+    left: 0;
+    background-position: -20px 0px;
+}
+.ct_menu {
+    right: 0;
+    background-position: -60px 0px;
+}
+.ct_search {
+    padding: 0px 60px;
+    width: 100%;
+    height: 100%;
+}
+.ct_search > input {
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: 16px;
+    color: #666;
+}
+/*主体内容块样式*/
+.ct_content {
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+.ct_cleft {
+    width: 100px;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.ct_cleft > ul {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ct_cleft li {
+    width: 100%;
+    height: 50px;
+}
+.ct_cleft li > a {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    border-left: 1px solid #ccc;
+}
+.ct_cleft li.active > a {
+    background-color: #fff;
+    color: #e92322;
+    border-left: none;
+    border-bottom: none;
+}
+.ct_cright {
+    height: 100%;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.ct_rImg {
+    width: 100%;
+    display: block;
+}
+.ct_rImg>img {
+    width: 100%;
+    display: block;
+}
+.ct_rImg > h3 {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.ct_hotCategory {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+}
+.ct_hotCategory  > ul {
+    overflow: hidden;
+}
+.ct_hotCategory li {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
